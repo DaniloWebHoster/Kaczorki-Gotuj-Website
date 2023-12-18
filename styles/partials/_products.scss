@@ -66,8 +66,10 @@ html body main article#products {
             font-style: italic;
         }
         img{
-            height: 500px;
+  
             border-radius: 15px;
+            max-width: 100%;
+            height: auto;
         }
     }
 

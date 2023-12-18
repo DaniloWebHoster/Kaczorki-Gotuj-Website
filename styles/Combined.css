@@ -1003,8 +1003,9 @@ html body main article#products section .note {
   font-style: italic;
 }
 html body main article#products section img {
-  height: 500px;
   border-radius: 15px;
+  max-width: 100%;
+  height: auto;
 }
 html body main article#products .span-two {
   grid-column: span 2;
