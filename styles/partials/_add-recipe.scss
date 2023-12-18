@@ -1,0 +1,27 @@
+@use "./vars";
+@use "./header-secondary-nav";
+@use "./form";
+
+html.collections.add-recipe {
+    background-image: none;
+    body {
+        padding: 0;
+
+        header {
+           
+            // Make current page's link in the navigation black.
+            #main-nav nav ul:not(:hover) li:nth-child(2) a{
+                color: black;
+            }
+            
+            #secondary-nav nav ul:not(:hover) li:nth-child(2) a{
+                color: black;
+            }
+        }
+
+        main {
+            padding: 0;
+            width: 100%;
+        }
+    }
+}
