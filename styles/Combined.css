@@ -11,63 +11,6 @@ main, footer {
   animation: fadeIn 1s ease-in;
 }
 
-html.about-me {
-  height: 100vh;
-  background-image: url("../images/backgrounds/pexels-stephan-seeber-1261728.jpg");
-  background-position: bottom center;
-  background-size: cover;
-  background-attachment: fixed;
-  --change-alpha: 0;
-}
-@media only screen and (max-width: 1000px) {
-  html.about-me {
-    height: 100vh;
-  }
-}
-html.about-me body {
-  display: block;
-}
-html.about-me body header #main-nav nav ul:not(:hover) li:nth-child(3) a {
-  color: black;
-}
-html.about-me body main {
-  width: 700px;
-  padding: 55px;
-  border-radius: 10px 10% 10px 10%;
-  margin: 70px auto;
-  background-color: rgba(255, 255, 255, calc(0.68 + var(--change-alpha)));
-  line-height: 1.7;
-}
-@media only screen and (max-width: 1000px) {
-  html.about-me body main {
-    box-sizing: border-box;
-    width: 100vw;
-    height: auto;
-    padding: 32px;
-    padding-bottom: 200px;
-    margin: 4px 0 0 0;
-    background: linear-gradient(to bottom, rgba(255, 255, 255, calc(0.68 + var(--change-alpha))) 60%, rgba(255, 255, 255, 0));
-    border-radius: 0;
-  }
-}
-html.about-me body main p {
-  margin-bottom: 1em;
-  text-align: left;
-}
-html.about-me body main p:last-child {
-  padding-top: 15px;
-  margin-bottom: 0;
-  text-align: center;
-}
-html.about-me body footer {
-  width: auto;
-  padding: 0 0 15px 0;
-  margin: 0 auto 0 auto;
-}
-html.about-me body footer p {
-  text-align: center;
-}
-
 header #secondary-nav {
   width: 100%;
   border-top: 3px solid rgba(0, 192, 147, 0.197);
@@ -359,6 +302,7 @@ html.contact {
 @media only screen and (max-width: 1000px) {
   html.contact {
     --change-alpha: 0;
+    background-image: url("../images/backgrounds/HomeCaterPhone.jpg");
   }
 }
 html.contact body {

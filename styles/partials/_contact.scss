@@ -12,6 +12,7 @@ html.contact {
 
     @media only screen and (max-width: vars.$max-width-phone) {
         --change-alpha: 0;
+        background-image: url("../images/backgrounds/HomeCaterPhone.jpg");
     }
 
     body {
