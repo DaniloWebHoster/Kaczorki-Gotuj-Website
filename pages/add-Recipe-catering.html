@@ -25,7 +25,7 @@
             <nav>
                 <ul>
                     <li><a href="./catering.html">Catering</a></li>
-                    <li><a href="./add-Recipe-catering.html">Add a Recipe</a></li>
+                    <li><a href="./add-Recipe-catering.html">Place an Order</a></li>
                 </ul>
             </nav>
         </div>
@@ -35,29 +35,75 @@
             <section id="personal-info">
                 <h2>Personal Info</h2>
                 <label id="first-label" for="name">First name</label>
-                <input id="name" type="text" required>
+                <input placeholder="John" id="name" type="text" required>
+
                 <label for="surname">Last name</label>
-                <input id="surname" type="text">
+                <input placeholder="Smith" id="surname" type="text">
+
                 <label for="email">Email</label>
-                <input id="email" type="email" required>
+                <input placeholder="example@mail.com" id="email" type="email" required>
+
+                <label for="phone">Phone Number</label>
+                <input placeholder="+123456789" id="phone" type="tel" required>
             </section>
 
             <section id="product-info">
-                <h2>Recipe</h2>
-                <select class="form-select" id="languages" name="languages">
-                    <option value="">Choose a language</option><option value="en">English</option><option value="en">Dutch</option><option value="en">Polish</option>
+                <h2>Select a Recipe</h2>
+                <label for= "language">Item Number</label>
+                <select id="languages" name="languages">
+                    <option value="">Choose an item</option>
+                    <option value="en">Item No. 001 (Catering Possibility 1)</option>
+                    <option value="en">Item No. 002 (Catering Possibility 2)</option>
+                    <option value="en">Item No. 003 (Catering Possibility 3)</option>
+                    <option value="en">Item No. 004 (Gyros)</option>
+                    <option value="en">Item No. 005 (Pierogi Ruskie)</option>
+                    <option value="en">Item No. 006 (Bigos)</option>
+                    <option value="en">Item No. 007 (Uszka)</option>
+                    <option value="en">Item No. 008 (Pierogi)</option>
+                    <option value="en">Item No. 009 (Barszcz Czerwony)</option>
+                    <option value="en">Item No. 010 (Kluski Parowe)</option>
+                    <option value="en">Item No. 011 (Bułki Słodkie)</option>
+                    <option value="en">Item No. 012 (Sernik Królewski)</option>
+                    <option value="en">Item No. 013 (Themed Cupcakes)</option>
+                    <option value="en">Item No. 014 (Biscuits)</option>
+                    <option value="en">Item No. 015 (W-zka with Cookies)</option>
+                    <option value="en">Item No. 016 (Babeczki z Kruchego Ciasta)</option>
+                    <option value="en">Item No. 017 (Ptysie)</option>
+                    <option value="en">Item No. 018 (Snickers Cake)</option>
+                    <option value="en">Item No. 019 (Coconut Cake)</option>
+                    <option value="en">Item No. 020 (Cupcakes)</option>
+                    <option value="en">Item No. 021 (Lemon Cake)</option>
+                    <option value="en">Item No. 022 (Gingerbread)</option>
+                    <option value="en">Item No. 023 (Mech)</option>
+                    <option value="en">Item No. 024 (Race Car Cake)</option>
+                    <option value="en">Item No. 025 (Cookie Monster Cake)</option>
+                    <option value="en">Item No. 026 (Lion Cake)</option>
+                    <option value="en">Item No. 027 (Football Cake)</option>
+                    <option value="en">Item No. 028 (Number Cake)</option>
+                    <option value="en">Item No. 029 (First Communion Cake)</option>
+                    <option value="en">Item No. 030 (Heart Cake)</option>
+                    <option value="en">Item No. 031 (Motorcycle Cake)</option>
+                    <option value="en">Item No. 032 (Birthday Cake)</option>
+                    <option value="en">Item No. 033 (Birthday Cake with Cookies)</option>
+                    <option value="en">Item No. 034 (Strawberry Birthday Cake)</option>
                 </select>
-                <label for="title">Title</label>
-                <input id="title" type="text" required>
-                <label for="subtitle">Subtitle</label>
-                <input id="subtitle" type="text">
-                <label for="content">Content</label>
-                <input id="content" type="file" accept=".txt, .docx, .doc, .pdf, .odt, .rtf, .tex, .wpd" required>
-                <label for="note">Notes</label>
+
+                <label for="title">Pickup Date</label>
+                <input placeholder="*required" id="title" type="text" required>
+
+                <label for="content">Extra Content</label>
+                <input id="content" type="file" accept=".txt, .docx, .doc, .pdf, .odt, .rtf, .tex, .wpd">
+
+                <label for="note">Extra Notes</label>
                 <input id="note" type="text">
             </section>
             <input type="submit" id="submit" value="Submit">   
         </form>
     </main>
+    <footer>
+        <p>*Note this page is still under construction so ordering through the site will come at a later date, please refer to our contacts page in order to contact us for now.</p>
+        <p>&copy;Kaczorki Gotują</p>
+        <p>All rights reserved.</p>
+    </footer>
 </body>
 </html>
