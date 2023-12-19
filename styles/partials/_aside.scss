@@ -1,0 +1,35 @@
+@use "./vars";
+
+html body main aside {
+    width: calc((100% - vars.$section-width)/2);
+    margin: 0;
+
+    @media only screen and (max-width: vars.$max-width-phone) {
+        display: none;
+        }   
+
+    &:hover a {
+        color: rgba(0, 0, 0, 0.5);
+    }
+
+    a {
+        position: fixed;
+        transition: 0.4s;
+        width: calc((100% - vars.$section-width)/2);
+        height: 100%;
+        padding-top: 0px;
+
+        text-align: center;
+        text-decoration: none;
+        color: rgba(0, 0, 0, 0.2);
+
+        &:visited {
+            color: vars.$not-hover-color;
+        }
+
+        p {
+            padding-top: 30px;
+            font-size: calc(vars.$font-size*4)
+        }
+    }          
+}

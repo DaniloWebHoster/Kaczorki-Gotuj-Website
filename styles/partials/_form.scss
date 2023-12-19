@@ -1,0 +1,87 @@
+@use "./vars";
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin: 0 auto 0 auto;
+
+    @media only screen and (max-width: vars.$max-width-phone) {
+        width: 100%;
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1em;
+        
+        h2 {
+            text-align: center;
+        }
+    
+        label {
+            text-align: center;
+            color: vars.$not-hover-color;
+            padding: 30px 0 5px 0; 
+            
+            &#first-label {
+                padding: 0 0 7px 0;
+            }
+        }
+    
+        input, select  {
+            color: rgba(0, 0, 0, 0.796);
+            height: 33px;
+            border: none;
+            border-bottom: 2px solid vars.$border-color;
+            padding: 5px 5px 5px 0;
+            border-radius: 2px;
+            text-align: center;
+            transition: background-color 0.3s;
+    
+            &:focus, &:hover {
+                outline: 3px solid rgba(0, 0, 0, 0);
+                background-color: rgba(0, 0, 255, 0.14);
+            }
+    
+            @media only screen and (max-width: vars.$max-width-phone) {
+                margin: 10px;
+            }
+        }
+
+        
+        input {
+            &#submit {
+                margin: 30px 0 5px 0;
+                border: none;
+            }
+            
+            &[type="file"] {
+                border: none;
+            }
+    
+            &:last-of-type {
+                margin-bottom: 30px;
+            }
+        }
+    
+        &#product-info {
+            margin-top: 18px;
+    
+            input, select  {
+                color: rgba(0, 0, 0, 0.796);
+                height: 33px;
+                border: none;
+                border-bottom: 2px solid vars.$border-color2;
+                padding: 5px 5px 5px 0;
+                border-radius: 2px;
+    
+                &:focus, &:hover {
+                    background-color: rgba(255, 166, 0, 0.16);
+                    outline: 3px solid rgba(0, 0, 0, 0);
+                }
+            }
+        }
+    }
+}
+
