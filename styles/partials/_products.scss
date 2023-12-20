@@ -1,6 +1,7 @@
 @use "./vars";
 @use "./products-nav";
 
+//Generalities for the main content of the page.
 html body main article#products {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -16,6 +17,7 @@ html body main article#products {
         width: auto;
     }
 
+    // The title for a food section spanning the size of two.
     h2.span-two {
         margin-bottom: -10px;
         text-align: center;
@@ -36,6 +38,7 @@ html body main article#products {
         box-shadow: 0px 0px calc($shadow-value + 0px) calc($shadow-value - 4px) rgb(100, 100, 100, calc($alpha*1));
         transition: .8s;
 
+        // Shaodw change when hoevering over the product.
         &:hover {
             box-shadow: 0px 0px calc($shadow-value + 2px) calc($shadow-value - 3px) rgb(100, 100, 100, calc($alpha*1.45));
         }
@@ -61,10 +64,13 @@ html body main article#products {
             white-space: pre-line;
         }
 
+        // Product subnote.
         .note {
             font-size: large;
             font-style: italic;
         }
+
+        // Product image.
         img{
   
             border-radius: 15px;
@@ -79,6 +85,7 @@ html body main article#products {
         margin: 0 auto 22px auto;
     }
 
+    // Products by themselves on the right.
     .span-right {
         grid-column: span 1 / 3;
         margin: 0 auto 22px auto;

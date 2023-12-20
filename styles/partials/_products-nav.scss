@@ -1,5 +1,6 @@
 @use "./vars";
 
+//Generalities for the navigation of the products.
 html body main article#products nav {
     display: flex;
     flex-direction: column;
@@ -24,7 +25,7 @@ html body main article#products nav {
 
     #toggle-btn {
         display: block;
-        width: 0;   // For accessibility.
+        width: 0;
         margin: 0 auto;
         
         &:checked + ul{
