@@ -215,10 +215,10 @@ html.collections body footer p {
 }
 
 html body main {
-  width: 330px;
+  width: 400px;
   height: auto;
   padding: 50px;
-  margin: 60px auto 0 auto;
+  margin: 40px auto 0 auto;
   background: none;
   background-color: rgba(255, 255, 255, 0.44);
   border-radius: 10px 20% 10px 20%;
@@ -945,6 +945,10 @@ html body main article#products section p {
 html body main article#products section .note {
   font-size: large;
   font-style: italic;
+}
+html body main article#products section a {
+  padding-top: 2rem;
+  text-align: center;
 }
 html body main article#products section img {
   border-radius: 15px;
