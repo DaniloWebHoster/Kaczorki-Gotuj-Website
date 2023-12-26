@@ -23,6 +23,7 @@ html body main {
         // background: linear-gradient(to bottom, red 40%, yellow);
         background: linear-gradient(to bottom, vars.$white-main 40%, vars.$white-transparent);
         border-radius: 0;
+        backdrop-filter: blur(0px);
                 
     }
     

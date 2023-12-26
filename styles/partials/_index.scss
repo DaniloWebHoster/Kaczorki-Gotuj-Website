@@ -35,6 +35,7 @@ html.index {
 
                 background: none;
                 background-color: vars.$white-main;
+                backdrop-filter: blur(0px);
             }
 
             p {
@@ -60,6 +61,7 @@ html.index {
                 
                 background: linear-gradient(to bottom, vars.$white-main 5%,  vars.$white-transparent);
                 border-radius: 0;
+                backdrop-filter: blur(0px);
             }
             
             p {

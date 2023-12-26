@@ -22,6 +22,7 @@ header #main-nav, #main-nav2, #main-nav3, #main-nav4 {
         background: none;
         background-color: vars.$white-main;
         border-radius: 0;
+        backdrop-filter: blur(0px);
     }
     
     div {
