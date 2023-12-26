@@ -5,6 +5,8 @@ html body main {
     height: auto;
     padding: 50px;
     margin: 40px auto 0 auto;
+    backdrop-filter: blur(5px);
+
 
     background: none;
     background-color: vars.$white-main-fixed;

@@ -8,6 +8,7 @@ header #main-nav, #main-nav2, #main-nav3, #main-nav4 {
     flex-wrap: wrap;
     align-items: center;
     height: vars.$header-height;
+    backdrop-filter: blur(5px);
 
     /* background: linear-gradient(to top left, red, green 27%); */
     background: linear-gradient(to top left, vars.$white-blend1, vars.$white-main 24%);
