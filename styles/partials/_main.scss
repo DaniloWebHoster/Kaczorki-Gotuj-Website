@@ -5,12 +5,20 @@ html body main {
     height: auto;
     padding: 50px;
     margin: 40px auto 0 auto;
-    backdrop-filter: blur(5px);
-
-
     background: none;
     background-color: vars.$white-main-fixed;
     border-radius: 10px 20% 10px 20%;
+
+    &.blurred-mains{
+        backdrop-filter: blur(5px);
+
+        @media only screen and (max-width: vars.$max-width-phone) {
+            backdrop-filter: blur(0px);
+                    
+        }
+
+    }
+
 
     @media only screen and (max-width: vars.$max-width-phone) {
         align-items: normal;
@@ -23,7 +31,7 @@ html body main {
         // background: linear-gradient(to bottom, red 40%, yellow);
         background: linear-gradient(to bottom, vars.$white-main 40%, vars.$white-transparent);
         border-radius: 0;
-        backdrop-filter: blur(0px);
+        //backdrop-filter: blur(0px);
                 
     }
     
@@ -100,3 +108,4 @@ html body main {
         }
     }
 }
+

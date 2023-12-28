@@ -59,7 +59,7 @@ html body main article#products {
 
         // Product content.
         p {
-            margin: 5px auto 0 auto;
+            margin: 5px auto 2rem auto;
             font-size: calc(vars.$font-size*1);
             white-space: pre-line;
         }
@@ -71,10 +71,20 @@ html body main article#products {
         }
 
         //Contact form button.
-        a{
-            padding-top: 2rem;
-            text-align: center;
+        .button-container {
+            height: 50px;
+            position: relative;
         }
+
+        .vertical-center-button {
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+
 
         // Product image.
         img{

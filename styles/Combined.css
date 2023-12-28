@@ -219,11 +219,19 @@ html body main {
   height: auto;
   padding: 50px;
   margin: 40px auto 0 auto;
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
   background: none;
   background-color: rgba(255, 255, 255, 0.44);
   border-radius: 10px 20% 10px 20%;
+}
+html body main.blurred-mains {
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+}
+@media only screen and (max-width: 1000px) {
+  html body main.blurred-mains {
+    -webkit-backdrop-filter: blur(0px);
+            backdrop-filter: blur(0px);
+  }
 }
 @media only screen and (max-width: 1000px) {
   html body main {
@@ -235,8 +243,6 @@ html body main {
     background: none;
     background: linear-gradient(to bottom, rgba(255, 255, 255, calc(0.68 + var(--change-alpha))) 40%, rgba(255, 255, 255, 0));
     border-radius: 0;
-    -webkit-backdrop-filter: blur(0px);
-            backdrop-filter: blur(0px);
   }
 }
 html body main address div {
@@ -952,7 +958,7 @@ html body main article#products section h4 {
   font-size: 23.3px;
 }
 html body main article#products section p {
-  margin: 5px auto 0 auto;
+  margin: 5px auto 2rem auto;
   font-size: 23.3px;
   white-space: pre-line;
 }
@@ -960,9 +966,16 @@ html body main article#products section .note {
   font-size: large;
   font-style: italic;
 }
-html body main article#products section a {
-  padding-top: 2rem;
-  text-align: center;
+html body main article#products section .button-container {
+  height: 50px;
+  position: relative;
+}
+html body main article#products section .vertical-center-button {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 html body main article#products section img {
   border-radius: 15px;
