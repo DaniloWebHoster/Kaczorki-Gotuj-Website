@@ -129,7 +129,7 @@ form section#product-info input:focus, form section#product-info input:hover, fo
 }
 
 html.collections-add-recipe {
-  background-image: url("../../images/backgrounds/ChristmasBackground2.jpg");
+  background-image: url("../images/backgrounds/ChristmasBackground2.jpg");
   background-position: bottom center;
   background-size: cover;
   background-attachment: fixed;
@@ -190,7 +190,7 @@ html.collections {
   background-position: bottom center;
   background-size: cover;
   background-attachment: fixed;
-  background-image: url("../../images/backgrounds/ChristmasBackground.jpg");
+  background-image: url("../images/backgrounds/ChristmasBackground.jpg");
   scroll-behavior: smooth;
   --change-alpha: -0.11;
 }
