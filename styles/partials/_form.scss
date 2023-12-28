@@ -5,9 +5,15 @@ form {
     flex-direction: column;
     width: 400px;
     margin: 0 auto 0 auto;
+    background-color: vars.$white-main-fixed;
+    padding: 2rem;
+    border-radius: 10px;
 
     @media only screen and (max-width: vars.$max-width-phone) {
         width: 100%;
+        background-color: none;
+        padding: 0;
+        border-radius: 5px;
     }
 
     section {
