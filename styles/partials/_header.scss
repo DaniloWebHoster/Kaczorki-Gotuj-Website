@@ -109,6 +109,11 @@ header #main-nav, #main-nav2, #main-nav3, #main-nav4 {
                     }
                 }
             }
+            img {
+                $size: 31px;
+                width: $size;
+                height: $size;
+            }
         }
     }
 }

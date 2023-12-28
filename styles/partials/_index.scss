@@ -41,7 +41,6 @@ html.index {
             p {
                 text-align: left;
             }
-        }
         
         footer {
             width: vars.$main-width;
@@ -62,6 +61,7 @@ html.index {
                 background: linear-gradient(to bottom, vars.$white-main 5%,  vars.$white-transparent);
                 border-radius: 0;
                 backdrop-filter: blur(0px);
+                text-align: center;
             }
             
             p {

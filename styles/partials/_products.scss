@@ -71,6 +71,10 @@ html body main article#products {
         }
 
         //Contact form button.
+        button{
+            cursor: pointer;
+        }
+
         .button-container {
             height: 50px;
             position: relative;

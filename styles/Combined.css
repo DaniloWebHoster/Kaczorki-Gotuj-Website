@@ -435,6 +435,10 @@ header #main-nav nav ul li a:hover, #main-nav2 nav ul li a:hover, #main-nav3 nav
 header #main-nav nav ul li a:not(:hover), #main-nav2 nav ul li a:not(:hover), #main-nav3 nav ul li a:not(:hover), #main-nav4 nav ul li a:not(:hover) {
   color: rgba(0, 0, 0, 0.5);
 }
+header #main-nav nav ul img, #main-nav2 nav ul img, #main-nav3 nav ul img, #main-nav4 nav ul img {
+  width: 31px;
+  height: 31px;
+}
 
 html.index {
   height: 100vh;
@@ -493,6 +497,7 @@ html.index body footer {
     border-radius: 0;
     -webkit-backdrop-filter: blur(0px);
             backdrop-filter: blur(0px);
+    text-align: center;
   }
 }
 html.index body footer p {
@@ -965,6 +970,9 @@ html body main article#products section p {
 html body main article#products section .note {
   font-size: large;
   font-style: italic;
+}
+html body main article#products section button {
+  cursor: pointer;
 }
 html body main article#products section .button-container {
   height: 50px;
