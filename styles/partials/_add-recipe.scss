@@ -2,12 +2,16 @@
 @use "./header-secondary-nav";
 @use "./form";
 
-html.collections.add-recipe {
-    background-image: none;
+html.collections-add-recipe {
+    background-image: url("../../images/backgrounds/ChristmasBackground2.jpg");
+    background-position: bottom center;
+    background-size: cover;
+    background-attachment: fixed;
     body {
         padding: 0;
 
         header {
+            background-color: vars.$white-main-fixed;
            
             // Make current page's link in the navigation black.
             #main-nav nav ul:not(:hover) li:nth-child(2) a{
@@ -22,6 +26,12 @@ html.collections.add-recipe {
         main {
             padding: 0;
             width: 100%;
+            color: vars.$gold-product-outline;
+        }
+
+        footer{
+            text-align: center;
+            color: vars.$gold-product-outline;
         }
     }
 }

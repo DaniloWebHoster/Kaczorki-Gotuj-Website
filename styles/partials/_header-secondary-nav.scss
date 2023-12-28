@@ -1,12 +1,26 @@
 @use "./vars";
 
+//Secondary header styling used for product pages!
 header #secondary-nav {
     width: 100%;
-    border-top: 3px solid rgba(0, 192, 147, 0.197);
-    border-bottom: 3px solid rgba(0, 192, 147, 0.197);
+    border-top: 3px solid rgba(0, 192, 147);
+    border-bottom: 3px solid rgba(0, 192, 147);
     margin-bottom: 50px;
+    background-color: vars.$white-main;
+    backdrop-filter: blur(5px);
 
     font-size: calc(vars.$font-size*1.1);
+
+    @media only screen and (max-width: vars.$max-width-phone) {
+        height: auto;
+        // margin-top: 4px;
+
+        /* background: linear-gradient(to top left, red, green 27%); */
+        background: none;
+        background-color: vars.$white-main;
+        border-radius: 0;
+        backdrop-filter: blur(0px);
+    }
 
     nav {
         ul {

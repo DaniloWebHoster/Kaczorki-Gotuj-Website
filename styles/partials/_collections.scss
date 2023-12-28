@@ -1,16 +1,18 @@
 @use "./vars";
+//Specific Styling for all pages under the class collection. Overwrites any normal styling applied.
 
+//background properties for all pages with the class collection.
 html.collections {
-    background-image: none;
     background-position: bottom center;
     background-size: cover;
+    background-attachment: fixed;
+    background-image: url("../../images/backgrounds/ChristmasBackground.jpg");
     scroll-behavior: smooth;
     --change-alpha: -0.11;
-
+    
     body {
 
         header {
-            background: none;
             border-radius: 0;
 
             // Make current page's link in the navigation black.
@@ -38,6 +40,10 @@ html.collections {
             width: 100%;
             padding: 0;
             margin: 2.8em  auto;
+            border-radius: 10px;
+            padding-bottom: 2rem;
+            padding-top:2rem;
+            background-color: vars.$white-main-fixed;
 
             @media only screen and (max-width: vars.$max-width-phone) {
                 display: block;
@@ -48,7 +54,7 @@ html.collections {
             width: 100%;
             padding: 0;
             margin: 0 auto 0 auto;
-            
+            color: vars.$gold-product-outline;
             border-radius: 0;
 
             @media only screen and (max-width: vars.$max-width-phone) {

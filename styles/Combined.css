@@ -13,10 +13,24 @@ main, footer {
 
 header #secondary-nav {
   width: 100%;
-  border-top: 3px solid rgba(0, 192, 147, 0.197);
-  border-bottom: 3px solid rgba(0, 192, 147, 0.197);
+  border-top: 3px solid rgb(0, 192, 147);
+  border-bottom: 3px solid rgb(0, 192, 147);
   margin-bottom: 50px;
+  background-color: rgba(255, 255, 255, calc(0.68 + var(--change-alpha)));
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
   font-size: 25.63px;
+}
+@media only screen and (max-width: 1000px) {
+  header #secondary-nav {
+    height: auto;
+    /* background: linear-gradient(to top left, red, green 27%); */
+    background: none;
+    background-color: rgba(255, 255, 255, calc(0.68 + var(--change-alpha)));
+    border-radius: 0;
+    -webkit-backdrop-filter: blur(0px);
+            backdrop-filter: blur(0px);
+  }
 }
 header #secondary-nav nav ul {
   display: flex;
@@ -114,21 +128,32 @@ form section#product-info input:focus, form section#product-info input:hover, fo
   outline: 3px solid rgba(0, 0, 0, 0);
 }
 
-html.collections.add-recipe {
-  background-image: none;
+html.collections-add-recipe {
+  background-image: url("../../images/backgrounds/ChristmasBackground2.jpg");
+  background-position: bottom center;
+  background-size: cover;
+  background-attachment: fixed;
 }
-html.collections.add-recipe body {
+html.collections-add-recipe body {
   padding: 0;
 }
-html.collections.add-recipe body header #main-nav nav ul:not(:hover) li:nth-child(2) a {
+html.collections-add-recipe body header {
+  background-color: rgba(255, 255, 255, 0.44);
+}
+html.collections-add-recipe body header #main-nav nav ul:not(:hover) li:nth-child(2) a {
   color: black;
 }
-html.collections.add-recipe body header #secondary-nav nav ul:not(:hover) li:nth-child(2) a {
+html.collections-add-recipe body header #secondary-nav nav ul:not(:hover) li:nth-child(2) a {
   color: black;
 }
-html.collections.add-recipe body main {
+html.collections-add-recipe body main {
   padding: 0;
   width: 100%;
+  color: gold;
+}
+html.collections-add-recipe body footer {
+  text-align: center;
+  color: gold;
 }
 
 html body main aside {
@@ -162,14 +187,14 @@ html body main aside a p {
 }
 
 html.collections {
-  background-image: none;
   background-position: bottom center;
   background-size: cover;
+  background-attachment: fixed;
+  background-image: url("../../images/backgrounds/ChristmasBackground.jpg");
   scroll-behavior: smooth;
   --change-alpha: -0.11;
 }
 html.collections body header {
-  background: none;
   border-radius: 0;
 }
 html.collections body header #main-nav nav ul:not(:hover) li:nth-child(2) a {
@@ -193,6 +218,10 @@ html.collections body main {
   width: 100%;
   padding: 0;
   margin: 2.8em auto;
+  border-radius: 10px;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  background-color: rgba(255, 255, 255, 0.44);
 }
 @media only screen and (max-width: 1000px) {
   html.collections body main {
@@ -203,6 +232,7 @@ html.collections body footer {
   width: 100%;
   padding: 0;
   margin: 0 auto 0 auto;
+  color: gold;
   border-radius: 0;
 }
 @media only screen and (max-width: 1000px) {
@@ -214,13 +244,18 @@ html.collections body footer p {
   text-align: center;
 }
 
+html body {
+  background-position: bottom center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 html body main {
   width: 400px;
   height: auto;
   padding: 50px;
   margin: 40px auto 0 auto;
   background: none;
-  background-color: rgba(255, 255, 255, 0.44);
   border-radius: 10px 20% 10px 20%;
 }
 html body main.blurred-mains {
@@ -322,6 +357,9 @@ html.contact body {
 }
 html.contact body header #main-nav nav ul:not(:hover) li:nth-child(6) a {
   color: black;
+}
+html.contact body main {
+  background-color: rgba(255, 255, 255, 0.44);
 }
 html.contact body p {
   font-style: normal;
@@ -940,11 +978,14 @@ html body main article#products h2.span-two {
   font-size: 34.95px;
 }
 html body main article#products section {
+  color: gold;
   display: flex;
   flex-direction: column;
   text-align: left;
   padding: 2.7em;
   margin: 0 auto;
+  background-color: rgb(136, 4, 5);
+  border: solid gold 5px;
   border-radius: 10px;
   box-shadow: 0px 0px 12px 8px rgba(100, 100, 100, 0.3);
   transition: 0.8s;

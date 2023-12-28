@@ -1,7 +1,7 @@
 @use "./vars";
 @use "./products-nav";
 
-//Generalities for the main content of the page.
+//Generalities for the article content of the page.
 html body main article#products {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -26,12 +26,14 @@ html body main article#products {
  
     // Each food is a section.
     section {
+        color: vars.$gold-product-outline;
         display: flex;
         flex-direction: column;
         text-align: left;
         padding: 2.7em;
         margin: 0 auto;  
-
+        background-color: vars.$product-background-red;
+        border: solid vars.$gold-product-outline 5px;
         border-radius: 10px;
         $alpha: 0.3;
         $shadow-value: 12px;
