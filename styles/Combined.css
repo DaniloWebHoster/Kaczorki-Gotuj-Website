@@ -64,6 +64,8 @@ form {
   background-color: rgba(255, 255, 255, 0.44);
   padding: 2rem;
   border-radius: 10px;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
 }
 @media only screen and (max-width: 1000px) {
   form {
@@ -71,6 +73,8 @@ form {
     background-color: none;
     padding: 0;
     border-radius: 5px;
+    -webkit-backdrop-filter: blur(0px);
+            backdrop-filter: blur(0px);
   }
 }
 form section {
@@ -477,6 +481,25 @@ header #main-nav nav ul li a:hover, #main-nav2 nav ul li a:hover, #main-nav3 nav
   color: black;
 }
 header #main-nav nav ul li a:not(:hover), #main-nav2 nav ul li a:not(:hover), #main-nav3 nav ul li a:not(:hover), #main-nav4 nav ul li a:not(:hover) {
+  color: rgba(0, 0, 0, 0.5);
+}
+header #main-nav nav ul div.lang a, #main-nav2 nav ul div.lang a, #main-nav3 nav ul div.lang a, #main-nav4 nav ul div.lang a {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding: 7.2px;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 25.63px;
+  text-decoration: none;
+  transition: 0.4s;
+}
+header #main-nav nav ul div.lang a:hover, #main-nav2 nav ul div.lang a:hover, #main-nav3 nav ul div.lang a:hover, #main-nav4 nav ul div.lang a:hover {
+  padding-right: 18px;
+  padding-left: 18px;
+  color: black;
+}
+header #main-nav nav ul div.lang a:not(:hover), #main-nav2 nav ul div.lang a:not(:hover), #main-nav3 nav ul div.lang a:not(:hover), #main-nav4 nav ul div.lang a:not(:hover) {
   color: rgba(0, 0, 0, 0.5);
 }
 header #main-nav nav ul img, #main-nav2 nav ul img, #main-nav3 nav ul img, #main-nav4 nav ul img {

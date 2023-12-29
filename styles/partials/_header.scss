@@ -72,7 +72,6 @@ header #main-nav, #main-nav2, #main-nav3, #main-nav4 {
             padding: 0;
             padding-right: 30px;
             margin: 0;
-
             list-style-type: none;
 
             @media only screen and (max-width: vars.$max-width-phone) {
@@ -91,7 +90,30 @@ header #main-nav, #main-nav2, #main-nav3, #main-nav4 {
                     align-items: center;
                     width: 100%;
                     padding: 7.2px;
+                    color:vars.$not-hover-color;
+                    font-size: calc(vars.$font-size*1.1);
+                    text-decoration: none;
+                    transition:  0.4s;
+                    
+                    &:hover {
+                        padding-right: $padding-size;
+                        padding-left: $padding-size;
 
+                        color: black;
+                    }
+
+                    &:not(:hover) {
+                        color: vars.$not-hover-color;
+                    }
+                }
+            }
+            div.lang{
+                a {
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    width: 100%;
+                    padding: 7.2px;
                     color:vars.$not-hover-color;
                     font-size: calc(vars.$font-size*1.1);
                     text-decoration: none;

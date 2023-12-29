@@ -8,12 +8,14 @@ form {
     background-color: vars.$white-main-fixed;
     padding: 2rem;
     border-radius: 10px;
+    backdrop-filter: blur(5px);
 
     @media only screen and (max-width: vars.$max-width-phone) {
         width: 100%;
         background-color: none;
         padding: 0;
         border-radius: 5px;
+        backdrop-filter: blur(0px);
     }
 
     section {
