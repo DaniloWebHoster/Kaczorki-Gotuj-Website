@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en-US" class="collections-add-recipe">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Recipe Dishes</title>
+    <link rel="stylesheet" href="../styles/Combined.css">
+</head>
+<body>
+    <header>
+        <div id="main-nav2">
+            <div><h1>Kaczorki Gotują</h1></div>
+            <nav>
+                <ul>
+                    <li><a id="first" href="../indexNL.html">Thuis</a></li>
+                    <li><a id="second" href="../pages/catering-NL.html">Horeca</a></li>
+                    <li><a id="third" href="../pages/dishes-NL.html">Borden</a></li>
+                    <li><a id="fourth" href="../pages/deserts-NL.html">Woestijnen</a></li>
+                    <li><a id="fifth" href="../pages/special-ocasion-cakes-NL.html">Taarten voor speciale gelegenheden</a></li>
+                    <li><a id="sixth" href="../pages/contact-NL.html">Contact</a></li>
+                    <div class = "lang">
+                        <a href="../pages/add-Recipe-dishes.html" language='english' class="active">EN</a>
+                        <a href="../pages/add-Recipe-dishes-NL.html" language ='dutch'>NL</a>
+                        <a href="../pages/add-Recipe-dishes-PL.html" language ='polish'>PL</a>
+                    </div>
+                </ul>
+            </nav>            
+        </div>            
+        <div id="secondary-nav">
+            <nav>
+                <ul>
+                    <li><a href="./dishes-NL.html">Borden</a></li>
+                    <li><a href="./add-Recipe-dishes-NL.html">Een bestelling plaatsen</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <form action="">
+            <section id="personal-info">
+                <h2>Persoonlijke informatie</h2>
+                <label id="first-label" for="name">Voornaam</label>
+                <input placeholder="John" id="name" type="text" required>
+
+                <label for="surname">Achternaam</label>
+                <input placeholder="Smith" id="surname" type="text">
+
+                <label for="email">Email</label>
+                <input placeholder="example@mail.com" id="email" type="email" required>
+
+                <label for="phone">GSM</label>
+                <input placeholder="+123456789" id="phone" type="tel" required>
+            </section>
+
+            <section id="product-info">
+                <h2>Selecteer een recept</h2>
+                <label for= "language">Item Number</label>
+                <select id="languages" name="languages">
+                    <option value="">-- Choose an item --</option>
+                    <option value="en">Artikelnr. 001 (Catering Possibility 1)</option>
+                    <option value="en">Artikelnr. 002 (Catering Possibility 2)</option>
+                    <option value="en">Artikelnr. 003 (Catering Possibility 3)</option>
+                    <option value="en">Artikelnr. 004 (Gyros)</option>
+                    <option value="en">Artikelnr. 005 (Pierogi Ruskie)</option>
+                    <option value="en">Artikelnr. 006 (Bigos)</option>
+                    <option value="en">Artikelnr. 007 (Uszka)</option>
+                    <option value="en">Artikelnr. 008 (Pierogi)</option>
+                    <option value="en">Artikelnr. 009 (Barszcz Czerwony)</option>
+                    <option value="en">Artikelnr. 010 (Kluski Parowe)</option>
+                    <option value="en">Artikelnr. 011 (Bułki Słodkie)</option>
+                    <option value="en">Artikelnr. 012 (Sernik Królewski)</option>
+                    <option value="en">Artikelnr. 013 (Themed Cupcakes)</option>
+                    <option value="en">Artikelnr. 014 (Biscuits)</option>
+                    <option value="en">Artikelnr. 015 (W-zka with Cookies)</option>
+                    <option value="en">Artikelnr. 016 (Babeczki z Kruchego Ciasta)</option>
+                    <option value="en">Artikelnr. 017 (Ptysie)</option>
+                    <option value="en">Artikelnr. 018 (Snickers Cake)</option>
+                    <option value="en">Artikelnr. 019 (Coconut Cake)</option>
+                    <option value="en">Artikelnr. 020 (Cupcakes)</option>
+                    <option value="en">Artikelnr. 021 (Lemon Cake)</option>
+                    <option value="en">Artikelnr. 022 (Gingerbread)</option>
+                    <option value="en">Artikelnr. 023 (Mech)</option>
+                    <option value="en">Artikelnr. 024 (Race Car Cake)</option>
+                    <option value="en">Artikelnr. 025 (Cookie Monster Cake)</option>
+                    <option value="en">Artikelnr. 026 (Lion Cake)</option>
+                    <option value="en">Artikelnr. 027 (Football Cake)</option>
+                    <option value="en">Artikelnr. 028 (Number Cake)</option>
+                    <option value="en">Artikelnr. 029 (First Communion Cake)</option>
+                    <option value="en">Artikelnr. 030 (Heart Cake)</option>
+                    <option value="en">Artikelnr. 031 (Motorcycle Cake)</option>
+                    <option value="en">Artikelnr. 032 (Birthday Cake)</option>
+                    <option value="en">Artikelnr. 033 (Birthday Cake with Cookies)</option>
+                    <option value="en">Artikelnr. 034 (Strawberry Birthday Cake)</option>
+                </select>
+
+                <label for="title">Ophaaldatum</label>
+                <input placeholder="*required" id="title" type="text" required>
+
+                <label for="content">Extra inhoud</label>
+                <input id="content" type="file" accept=".txt, .docx, .doc, .pdf, .odt, .rtf, .tex, .wpd">
+
+                <label for="note">Extra opmerkingen</label>
+                <input placeholder="e.g Allergies, Different age on bithday cake, etc." id="note" type="text">
+            </section>
+            <input type="submit" id="submit" value="Submit">   
+        </form>
+    </main>
+    <footer>
+        <p>*Let op: deze pagina is nog in aanbouw, dus bestellen via de site zal op een later tijdstip gebeuren. Raadpleeg onze contactpagina om voorlopig contact met ons op te nemen.</p>
+        <p>&copy;Kaczorki Gotują</p>
+        <p>All rights reserved.</p>
+    </footer>
+</body>
+</html>
