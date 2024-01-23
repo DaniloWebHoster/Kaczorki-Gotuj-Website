@@ -392,7 +392,7 @@ header #main-nav, #main-nav2, #main-nav3, #main-nav4 {
   justify-content: space-around;
   flex-wrap: wrap;
   align-items: center;
-  height: 105px;
+  padding: 20px;
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
   /* background: linear-gradient(to top left, red, green 27%); */
