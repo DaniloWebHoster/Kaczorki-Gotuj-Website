@@ -386,6 +386,7 @@ header #main-nav, #main-nav2, #main-nav3, #main-nav4 {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  padding: 20px;
   align-items: center;
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
