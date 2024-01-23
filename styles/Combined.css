@@ -139,7 +139,6 @@ form section#product-info input:focus, form section#product-info input:hover, fo
 }
 
 html.collections-add-recipe {
-  background-image: url("../images/backgrounds/ChristmasBackground2.jpg");
   background-position: bottom center;
   background-size: cover;
   background-attachment: fixed;
@@ -159,11 +158,9 @@ html.collections-add-recipe body header #secondary-nav nav ul:not(:hover) li:nth
 html.collections-add-recipe body main {
   padding: 0;
   width: 100%;
-  color: gold;
 }
 html.collections-add-recipe body footer {
   text-align: center;
-  color: gold;
 }
 
 html body main aside {
@@ -200,7 +197,6 @@ html.collections {
   background-position: bottom center;
   background-size: cover;
   background-attachment: fixed;
-  background-image: url("../images/backgrounds/ChristmasBackground.jpg");
   scroll-behavior: smooth;
   --change-alpha: -0.11;
 }
@@ -242,7 +238,6 @@ html.collections body footer {
   width: 100%;
   padding: 0;
   margin: 0 auto 0 auto;
-  color: gold;
   border-radius: 0;
 }
 @media only screen and (max-width: 1000px) {
@@ -392,7 +387,6 @@ header #main-nav, #main-nav2, #main-nav3, #main-nav4 {
   justify-content: space-around;
   flex-wrap: wrap;
   align-items: center;
-  padding: 20px;
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
   /* background: linear-gradient(to top left, red, green 27%); */
@@ -1007,14 +1001,11 @@ html body main article#products h2.span-two {
   font-size: 34.95px;
 }
 html body main article#products section {
-  color: gold;
   display: flex;
   flex-direction: column;
   text-align: left;
   padding: 2.7em;
   margin: 0 auto;
-  background-color: rgb(136, 4, 5);
-  border: solid gold 5px;
   border-radius: 10px;
   box-shadow: 0px 0px 12px 8px rgba(100, 100, 100, 0.3);
   transition: 0.8s;
